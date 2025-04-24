@@ -25,12 +25,18 @@
     .card {
       background-color: #fff;
       margin: 20px 0;
-      padding: 20px 20px 30px;
+      padding: 20px;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-      background-repeat: no-repeat;
-      background-position: center right;
-      background-size: 150px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+      max-width: 150px;
+      float: right;
+      margin-left: 20px;
+      border-radius: 8px;
     }
 
     .card h2 {
@@ -42,7 +48,6 @@
       font-weight: 400;
       color: #333;
       margin-bottom: 30px;
-     
     }
 
     .card a {
@@ -58,24 +63,12 @@
       opacity: 0.9;
     }
 
-    .card:first-of-type {
-      background: #fff url(./images/pose1.png) no-repeat center right/150px;
-    }
-
     .card:first-of-type a {
       background-color: #e04555;
     }
 
-    .card:nth-of-type(2) {
-      background: #fff url(./images/pose2.png) no-repeat center right/150px;
-    }
-
     .card:nth-of-type(2) a {
       background-color: #0d4ba3;
-    }
-
-    .card:last-of-type {
-      background: #fff url(./images/pose3.png) no-repeat center right/150px;
     }
 
     .card:last-of-type a {
@@ -87,59 +80,26 @@
 
   <div class="container">
     <div class="card">
+      <img src="./images/pose1.png" alt="Hatha Yoga">
       <h2>Hatha Yoga</h2>
       <p>Focuses on physical postures and breathing techniques</p>
       <a href="#">Learn More</a>
     </div>
 
     <div class="card">
+      <img src="./images/pose2.png" alt="Vinyasa Yoga">
       <h2>Vinyasa Yoga</h2>
       <p>Focuses on movement synchronized with the breath</p>
       <a href="#">Learn More</a>
     </div>
 
     <div class="card">
+      <img src="./images/pose3.png" alt="Restorative Yoga">
       <h2>Restorative Yoga</h2>
       <p>Emphasizes deep relaxation and rejuvenation</p>
       <a href="#">Learn More</a>
     </div>
   </div>
-
-  <div class="yoga-box">
-    <div class="yoga-text">
-      <h2>Hatha Yoga</h2>
-      <p>Focuses on physical postures and breathing techniques</p>
-      <a href="#" class="learn-more">Learn More</a>
-    </div>
-    <div class="yoga-image">
-      <img src="pose1.png" alt="Hatha Yoga">
-    </div>
-  </div>
-
-  <div class="yoga-box">
-    <div class="yoga-text">
-      <h2>Vinyasa Yoga</h2>
-      <p>Emphasizes flow and movement synchronized with breath</p>
-      <a href="#" class="learn-more">Learn More</a>
-    </div>
-    <div class="yoga-image">
-      <img src="pose2.png" alt="Vinyasa Yoga">
-    </div>
-  </div>
-
-  <div class="yoga-box">
-    <div class="yoga-text">
-      <h2>Restorative Yoga</h2>
-      <p>Targets deep connective tissues with long-held poses</p>
-      <a href="#" class="learn-more">Learn More</a>
-    </div>
-    <div class="yoga-image">
-      <img src="pose3.png" alt="Restorative Yoga">
-    </div>
-  </div>
-
-</body>
-</html>
 
 </body>
 </html>
