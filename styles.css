@@ -37,7 +37,7 @@ body {
 }
 
 .card:last-of-type {
-  background: #fff url(./‫images/pose3.png) no-repeat center right/150px;
+  background: #fff url(./‫images/Hatha-yoga.png) no-repeat center right/150px;
 }
 
 .card:last-of-type a {
@@ -60,4 +60,26 @@ body {
 }
 .card a:hover {
   opacity: 0.9;
+}
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.card .text {
+  flex: 1;
+}
+
+.card .image {
+  flex-shrink: 0;
+}
+
+img.sqc {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
 }
